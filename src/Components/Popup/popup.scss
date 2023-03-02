@@ -1,0 +1,72 @@
+@import '../SASS/global';
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transform: translatex(-50%);
+    left: 50%;
+    width: 375px;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.8);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s linear;
+    @media only screen and (max-width: $md) {
+        transform: translatex(0);
+        left: 0;
+        width: 100%;
+    }
+    &.active {
+        z-index: 9999;
+        opacity: 1;
+    }
+    .message {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        width: 90%;
+        position: relative;
+        .pop__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mess__info {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Cairo;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .close__btn {
+            display: block;
+            margin: 20px auto;
+            background-color: transparent;
+            width: 175px;
+            height: 37px;
+            border: 1px solid #000000;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .close__icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}

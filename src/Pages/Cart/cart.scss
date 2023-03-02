@@ -1,0 +1,42 @@
+@import '../../Components/SASS/global';
+.wrapper {
+    padding: 20px;
+}
+
+.check__out {
+    display: flex;
+    width: 375px;
+    background: #fff;
+    border-top: 1px solid #E3E3E3;
+    padding: 20px;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 999;
+    @media only screen and (max-width: $md) {
+        width: 100%;
+        left: 0;
+        transform: translatex(0);
+    }
+    button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $green-color;
+        color: #fff;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        height: 48px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'cairo';
+        letter-spacing: 1px;
+    }
+}

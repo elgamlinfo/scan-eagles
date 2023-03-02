@@ -1,0 +1,73 @@
+.track__info {
+    display: block;
+    padding: 0px 20px;
+    margin-top: 10px;
+    min-height: 50vh;
+    .personal__info {
+        letter-spacing: 1px;
+        h3 {
+            font-size: 21px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 25px;
+        }
+    }
+    .order__status {
+        margin: 20px 0px;
+        margin-top: 40px;
+        h3 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            
+            .circle {
+                display: block;
+                width: 26px;
+                height: 26px;
+                background: #c4c4c4;
+                border-radius: 50%;    
+            }
+            &:nth-last-of-type(4) .circle{
+                &.active {
+                    background: #38B654;
+                }
+            }
+            &:nth-last-of-type(3) .circle{
+                &.active {
+                    background: #D73737;
+                }
+            }
+            &:nth-last-of-type(2) .circle{
+                &.active {
+                    background: #FB9902;
+                }
+            }
+            &:nth-last-of-type(1) .circle{
+                &.active {
+                    background: #0391CE;
+                }
+            }
+            span {
+                &:last-of-type {
+                    display: block;
+                    width: 70%;
+                    margin-left: 20px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

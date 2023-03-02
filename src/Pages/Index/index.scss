@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "../../Components/SASS/global";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c8c8c8;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.index {
+    width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: $md)  {
+        width: 100%;
+    }
+}

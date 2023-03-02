@@ -1,0 +1,29 @@
+@import '../SASS/global';
+
+.ads {
+    background-color: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        margin-top: 8px;
+        .ads__badge {
+            background-color: $green-color;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            padding: 2px 20px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

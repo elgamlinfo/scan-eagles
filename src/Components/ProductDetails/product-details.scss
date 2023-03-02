@@ -1,0 +1,275 @@
+@import '../SASS/global';
+.prod__details {
+    margin-bottom: 100px;
+    .prod__info {
+        margin-bottom: 20px;  
+        padding: 0px 20px;
+
+        h2 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        .prod__price {
+            font-size: 30px;
+            font-weight: 600;
+            color: $green-color;
+            letter-spacing: 1px;
+        }
+        .details {
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+    }
+    
+    .addtional {
+        border-top: 1px solid #E3E3E3;
+        padding: 15px 20px;
+        
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .check__box {
+            display: flex;
+            justify-content: center;
+            height: 48px;
+            margin-bottom: 16px;
+            input {
+                position: relative;
+                width: 25px;
+                height: 25px;
+                border-radius: 5px;
+                padding-top: 5px;
+                margin-top: 4px;
+            }
+            span {
+                font-size: 17px;
+                line-height: 24px;
+                font-weight: 500;
+                &:first-of-type {
+                    width: 65%;
+                    padding-left: 10px;
+                }
+                &:last-of-type {
+                    width: 30%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .prod__qnt {
+        border-top: 1px solid #E3E3E3;
+        padding: 15px 20px;
+        
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .qnt_count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #E3E3E3;
+            height: 48px ;
+            border-radius: 5px;
+            button{
+                height: 100%;
+                width: 40%;
+                border: none;
+                background: none;
+                font-size: 21px;
+                font-weight: 300;
+                color: #7a7879;
+                cursor: pointer;
+            }
+            .count {
+                height: 100%;
+                width: 20%;
+                font-size: 34px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .more__details {
+        padding: 15px;
+        border-top: 1px solid #E3E3E3;
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+        textarea {
+            border: 2px solid #E3E3E3;
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 120px;
+            padding: 10px;
+            padding-left: 15px;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 26px;
+            font-family: 'Cairo';
+            color: #000000;
+        }
+    }
+
+    .related__dish {
+        border-top: 1px solid #E3E3E3;
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            padding: 15px;
+        }
+    }
+    .cart {
+        display: flex;
+        width: 375px;
+        background: #fff;
+        border-top: 1px solid #E3E3E3;
+        padding: 20px;
+        gap: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        z-index: 999;
+        @media only screen and (max-width: $md) {
+            width: 100%;
+            left: 0;
+            transform: translatex(0);
+
+        }
+        button {
+            display: flex;
+            background: $green-color;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: capitalize;
+            font-family: 'Cairo';
+        }
+        .add__cart{
+            width: 80%;
+        }
+        .go__cart{
+            width: 20%;
+            justify-content: center;
+            position: relative;
+            font-family: 'Cairo';
+            .count{
+                background: #ff0e0e;
+                color: #fff;
+                position: absolute;
+                top: -15px;
+                right: -11px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                font-size: 20px;
+                line-height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
+
+.rtl {
+    h2 {
+        letter-spacing: 0px !important;
+    }
+    .prod__price {
+        letter-spacing: 0px !important;
+    }
+    .details {
+        letter-spacing: 0px !important;
+    }
+}
+
+.addtional {
+    
+    h2 {
+        letter-spacing: 0px;
+    }
+
+    .check__box {
+        span {
+            &:first-of-type {
+                width: 65%;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.prod__qnt {
+    border-top: 1px solid #E3E3E3;
+    padding: 15px 20px;
+    
+    h2 {
+        letter-spacing: 0px;
+    }
+}
+
+.more__details {
+    h2 {
+        letter-spacing: 0px;
+    }
+    textarea {
+        letter-spacing: 0px;
+    }
+}
+
+.related__dish {
+    h2 {
+        letter-spacing: 0px;
+    }
+}
+.cart {
+    @media only screen and (max-width: $md) {
+        width: 100%;
+        left: 0;
+        transform: translatex(0);
+    }
+    .go__cart{
+        width: 20%;
+        justify-content: center;
+        position: relative;
+        font-family: 'Cairo';
+        .count{
+            right: 48px !important;
+        }
+    }
+}

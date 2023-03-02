@@ -1,0 +1,229 @@
+@import '../SASS/global';
+.reservation {
+    width: 100%;
+    background: url('https://restaurant.layouti.com/storage/booking/16408450381.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    .reservation__from {
+        display: block;
+        position: relative;
+        z-index: 5;
+        margin: 0px auto;
+        margin-bottom: -200px;
+        background: #fff;
+        padding: 20px 30px;
+        width: 95%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);    
+        .input__group{
+            margin-bottom: 15px;
+            label {  
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                position: relative;
+                &:after {
+                    content: "*";
+                    color: #f00;
+                    position: absolute;
+                    top: -5px;
+                    right: -13px;
+                    font-size: 18px;
+                }
+            }
+            .error__message {
+                font-size: 13px;
+                line-height: -12px;
+                margin-top: -3px;
+                padding-left: 3px;
+                color: #ff2727;
+                opacity: 0;
+                transition: all 0.2s linear;
+                display: none;
+                &.error {
+                    opacity: 1;
+                }
+            }
+            select {
+                appearance:none;
+                position: relative;
+                background: transparent;
+                background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='30' viewBox='0 0 24 24' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+                background-repeat: no-repeat;
+                background-position-x: 98%;
+                background-position-y: 8px;
+            }
+            select,input {
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                width: 100%;
+                height: 48px;
+                padding-left: 15px;
+                padding-right: 15px;
+                outline: none;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight:400;
+                cursor: pointer;
+                text-transform: capitalize;
+                border: 1px solid #E3E3E3;
+                font-family: 'cairo';
+                letter-spacing: 1px;
+                transition: all 0.2s linear;
+                &:focus {
+                    border:1px solid  $green-color;
+                }
+            }
+            .intl-tel-input {
+                width: 100%;
+                input {
+                    padding-left: 50px;
+                }
+                .flag-container {
+                    // .selected-flag {
+
+                    // }
+                    ul {
+                        width: 100%;
+                    }
+                }
+            }
+            input {
+                display: block;
+                border: 1px solid #E3E3E3;
+                cursor: text;
+                letter-spacing: 1px;
+                text-transform: lowercase;
+                &::placeholder {
+                    color: rgb(155, 155, 155);
+                    text-transform: capitalize;
+                    font-family: 'cairo';
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                }
+            }
+            textarea {
+                display: block;
+                border: 1px solid #E3E3E3;
+                cursor: text;
+                text-transform: lowercase;
+                max-width: 100%;
+                min-width: 100%;
+                min-height: 150px;
+                margin-top: 3px;
+                border-radius: 10px;
+                padding-top: 10px;
+                padding-left: 20px;
+                outline: none;
+                transition: all 0.2s linear;
+                letter-spacing: 1px;
+                &:focus {
+                    border:1px solid  $green-color;
+                }
+                &::placeholder {
+                    color: rgb(155, 155, 155);
+                    text-transform: capitalize;
+                    font-family: 'cairo';
+                    letter-spacing: 1px;
+                }
+            }
+            .time__wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                select {
+                    text-align: left;
+                    color: #6e6e6e;
+                }
+            }
+            &.error {
+                select,input {
+                    border: 1px solid #ff2727;
+                }
+                .error__message {
+                    display: block;
+                    color: #ff2727;
+                    opacity: 1;
+                }
+            }
+            &.rtl {
+                label {  
+                    letter-spacing: 0px;
+                    &:after {
+                        right: 100%;
+                    }
+                }
+                input,select {
+                    padding-right: 10px;
+                    letter-spacing: 0px;
+                }
+                select {
+                    background-position-x: 2%;
+                    text-align: right;
+                }
+                input {
+                    &::placeholder {
+                        text-transform: lowercase;
+                    }
+                }
+                .intl-tel-input {
+                    width: 100%;
+                    input {
+                        padding-right: 50px;
+                        text-align: right;
+                        direction: ltr;
+                    }
+                }
+                textarea {
+                    padding-right: 10px;
+                }
+            }
+        }
+        .input__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .input__group {
+                width: 50%;
+                label {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.7);
+        z-index: 1;
+    }
+    .send {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green-color;
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        height: 48px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "../SASS/global";
+
+
+
+.swiper-container {
+    //min-height: 185px;
+    padding: 35px 0;
+    padding-top: 0;
+    .swiper-pagination {
+        top: 88%;
+        .swiper-pagination-bullet {
+            background-color: #444;
+            width: 8px;
+            height: 8px;
+            &.swiper-pagination-bullet-active {
+                background-color: $green-color;
+            }
+        }
+    }
+}
+
+.swiper__slider {
+    width: 50% !important;
+    display: block;
+    
+    .product__card {
+        &::after {
+            z-index: 1 !important;
+        }
+    } 
+    @media only screen and (max-width: $md) {
+        width: calc(100% /3) !important;
+    }
+    @media only screen and (max-width: $sm) {
+        width: 50% !important;
+    }
+}

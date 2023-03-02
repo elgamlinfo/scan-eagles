@@ -1,0 +1,40 @@
+@import '../SASS/global';
+
+.cart__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 80px);
+    .image {
+        width: 100%;
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+        a {
+            display: block;
+            height: 48px;
+            background-color: $green-color;
+            width: 200px;
+            margin: 20px auto;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 7px;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@import "../SASS/global";
+a {
+    text-decoration: none;
+}
+.three__prod__one {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    .image__box__three {
+        width: 100%;
+        height: 130px;
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .price {
+            position: absolute;
+            top: 9px;
+            left: 50%;
+            transform: translatex(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-decoration: none;
+            padding: 2px 6px;
+        }
+    }
+    .prod__title__three {
+        width: 100%;
+        min-height: 80px;
+        background-color: #3b3b3bdb;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0px 0px 8px 8px;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+    }
+}
+
+
+.three__prod__two {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .price {
+        position: absolute;
+        top: 9px;
+        left: 50%;
+        transform: translatex(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-decoration: none;
+        padding: 2px 6px;
+    }
+    .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 60px;
+        p {
+            font-size: 16px;
+            line-height: 18px;
+            transition: all 0.2s linear;
+            padding: 0 10px;
+            &:hover {
+                color: $green-color;
+            }
+        }
+    }
+}
+
+
+
+.three__prod__three {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    .img{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        a {
+            display: block;
+            img{
+                width: 90%;
+                height: 130px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+                //position: relative;
+                //z-index: 30;
+            }
+        }
+        .prod__price {
+            background: rgba(0,0,0, .7);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 4px 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            z-index: 10;
+        }
+    }
+    
+    &::after {
+        content: ''; 
+        background-color: #3aaa35; 
+        width: 100%; 
+        position: absolute; 
+        width: 83%; 
+        height: 53%; 
+        top: -8%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        z-index: 1;
+    }
+}

@@ -1,0 +1,115 @@
+.home__navbar {
+    height: 80px;
+    //position: sticky !important;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 888;
+    .toogle__menu__btn {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .toogle__btn {
+            color: #fff;
+            font-size: 21px;
+            background-color: #000;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .logo {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: block;
+            width: 150px;
+            object-fit: contain;
+            height: 50px;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #fff;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+    }
+    .lang__btn {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .tog {
+            color: #fff;
+            font-size: 30px;
+            background-color: #000;
+            outline: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .dropdown__lang {
+            position: absolute;
+            top: 219%;
+            right: 5px;
+            padding: 1px;
+            background: #fff;
+            width: 158px;
+            border-radius: 5px;
+            transition: all 0.1s linear;
+            opacity: 0;
+            z-index: -1;
+            &.active {
+                border: 1px solid rgb(156, 156, 156);
+                opacity: 1;
+                z-index: 5555;
+            }
+            .langg {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border: none;
+                background-color: #fff;
+                height: 40px;
+                text-align: left;
+                padding-left: 10px;
+                color: #000;
+                text-decoration: none;
+                transition: all 0.2s linear;
+                text-transform: capitalize;
+                &:hover {
+                    background: rgb(238, 238, 238);
+                }
+            }
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 14px solid #fff;
+                position: absolute;
+                bottom: 100%;
+                right: 18px;
+            }
+            &.rtl {
+                right: -85px;
+                &::after {
+                    content: "";
+                    left: 18px;
+                }
+            }
+        }
+    }
+}

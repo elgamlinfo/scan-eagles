@@ -1,0 +1,174 @@
+@import '../../Components/SASS/global';
+.order__container {
+    display: block;
+    background-color: #000;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
+    .order {
+        display: block;
+        background-color: #fff;
+        height: 85vh;
+        width: 100%;
+        border-radius: 5px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        .order__head {
+            padding: 30px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .order__info {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            border-top: 1px solid #E3E3E3;
+            p {
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .order__list {
+            padding: 15px 20px;
+            font-size: 14px;
+            border-top: 1px solid #E3E3E3;
+            font-weight: 400;
+            .order__items {
+                margin-bottom: 10px;
+                .order__item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .price{
+                        font-weight: 700;
+                    }
+                }
+                .order__add {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 5px;
+                    p{
+                        &:first-of-type {
+                            width: 60%;
+                            padding-left: 22px;
+                            line-height: 16px;
+                        }
+                    }
+                    .price{
+                        font-weight: 700;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .total__tax {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            font-size: 14px;
+            border-top: 1px solid #E3E3E3;
+            font-weight: 700;
+        }
+
+        .order__tax {
+            padding: 15px 20px;
+            font-size: 14px;
+            border-top: 1px solid #E3E3E3;
+            font-weight: 400;
+            .tax {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 12px;
+            }
+
+            .total_with_tax {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+        }
+
+        .user__info {
+            padding: 15px 20px;
+            font-size: 14px;
+            border-top: 1px solid #E3E3E3;
+            font-weight: 600;
+            .info {
+                display: flex;
+                margin-bottom: 10px;
+                p{
+                    line-height: 14px;
+                    font-size: 12px;
+                    &:first-of-type {
+                        width: 30%;
+                    }
+                    &:last-of-type {
+                        width: 58%;
+                    }
+                }
+            }
+        }
+        .order__foot {
+            text-align: center;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 15px 20px;
+            border-top: 1px solid #E3E3E3;
+            p {
+                &:last-of-type {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .btn_group {
+        //margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 11vh;
+        padding-top: 10px;
+        button {
+            border: none;
+            outline: none;
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            height: 46px;
+            border-radius: 5px;
+            text-transform:capitalize;
+            cursor: pointer;
+        }
+        .back{
+            background-color: $green-color;
+            color: #fff;
+            width: 35%;
+        }
+        .track{
+            width: 65%;
+            margin-left: 10px;
+        }
+    }
+}

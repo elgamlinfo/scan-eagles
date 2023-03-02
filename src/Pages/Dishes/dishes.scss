@@ -1,0 +1,19 @@
+.categ__wrapper {
+    padding-top: 20px;
+    &.flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        padding: 20px;
+        gap: 20px;
+        .temp4__prod__1 {
+            width: 47% !important;
+            margin: 0;
+        }
+        .prod__four__one {
+            width: 47% ;
+        }
+    }
+
+}
