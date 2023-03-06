@@ -8,7 +8,8 @@ const initialState={data:{
     mostsale_title: "Most Selling Dishes",
     best_sale_dishes: [{price: 30, key: 1, image: "https://res.cloudinary.com/elgaml/image/upload/v1677781129/Rectangle_78_xzvyu9.png", title: "Thai Chicken Salad"}],
     currency: "Egp",
-    categories_categories:"Categories",
+    categories_categoriesEn:"Menu",
+    categories_categoriesAr:"القائمه",
     category: [{
             key: 1, 
             has_sub_categories: false, 

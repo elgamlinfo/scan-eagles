@@ -21,8 +21,7 @@ import TempFive from "../../Components/Skelaton/TempFive";
 import ProdFourTwo from "../../Components/Skelaton/TempFour/ProdFourTwo";
 import TitleSek from "../../Components/Skelaton/TitleSek";
 import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
-
-
+import Category from "../../Data/Category";
 const Home = () => {
     let lang = Cookies.get("lang")
     let [active, setActive] = useState(false);
@@ -85,7 +84,7 @@ const Home = () => {
             setCateg(mainData.category);
             setTitle1(mainData.mostsale_title)
             setBestSel(mainData.best_sale_dishes);
-            setTitle2(mainData.categories_categories)
+            setTitle2(lang=="en"?mainData.categories_categoriesEn:mainData.categories_categoriesAr)
             // setAsideData(res.data.data.aside)
             // setMenu(res.data.data.menuimages)
             // setAdsTrans(res.data.data.aside.reanslation.ad)
@@ -102,14 +101,14 @@ const Home = () => {
                 feedActiveHandler={feedActiveHandler}
                 asidedata={asidedata}
             />:null}
-            <div className="main__slider">
+            {/* <div className="main__slider">
                 {mainData && mainData.temp !== "5"&& title1 ?<MainTitle title={title1} />:<TitleSek />}
                 <MainSlider lang={lang}  data={bestSell}/>
-            </div>
+            </div> */}
             <div className="category">
             {mainData && mainData.temp !== "5"&&title2 ?<MainTitle title={title2} margin={true}/>:<TitleSek />}
-                {categ&&mainData
-                    ? categ.map((c,i) => {
+                {Category&&mainData
+                    ? Category.map((c,i) => {
                             return( 
                                 mainData.temp === "1" ?
                                 <Product2TempOne
@@ -122,7 +121,7 @@ const Home = () => {
                                     key={c.key}
                                 />: 
                                 mainData.temp === "3"?<TempThreeProdTwo 
-                                    categ={c} 
+                                    categ={{...c, title: lang == "ar"?c.titleAr:c.titleEn}} 
                                     key={c.key} 
                                 />:
                                 mainData.temp === "4"?<Product2 
