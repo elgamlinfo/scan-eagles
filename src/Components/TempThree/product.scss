@@ -63,15 +63,17 @@ a {
         height: 100%;
         object-fit: cover;
     }
-    .price {
+    .price_dish {
         position: absolute;
         top: 9px;
         left: 50%;
         transform: translatex(-50%);
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgb(0, 0, 0);
         color: #fff;
         text-decoration: none;
-        padding: 2px 6px;
+        padding: 5px 10px;
+        z-index: 99;
+        border-radius: 5px;
     }
     .title {
         position: absolute;

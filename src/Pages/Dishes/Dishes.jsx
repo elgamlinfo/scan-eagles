@@ -7,14 +7,14 @@ import ProductTwo from "../../Components/Skelaton/ProductTwo";
 import './dishes.scss'
 import Product3TempOne from "../../Components/Product/Product3TempOne";
 import axios from "axios";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Cookies from "js-cookie";
 import TempThreeProdTwo from "../../Components/TempThree/TempThreeProdTwo";
 import TempTwoProdTwo from "../../Components/TempTwo/TempTwoProdTwo";
 import TempThreeProdOneS from "../../Components/Skelaton/TempThree/TempThreeProdOneS";
 import ProdFourOne from "../../Components/Skelaton/TempFour/ProdFourOne";
 import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
-
+import DishesData from "../../Data/DishesData";
 function useQuery() {
     const { search } = useLocation();
     return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -28,25 +28,18 @@ const Dishes = () => {
     const [title, setTitle] = useState('');
     let query = useQuery();
     const navigate = useNavigate();
+    const params = useParams()
+
     useEffect(() => {
         if (!lang) {
             navigate("/");
             return;
         }
-        if(mainData) {
-            axios
-                .get(
-                    `${process.env.REACT_APP_API}/active-dishes/${lang}/${mainData.countryname}/${query.get(
-                        "key"
-                    )}`
-                )
-                .then((res) => {
-                    setTitle(res.data.data.category)
-                    setData(res.data.data.dishes);
-                });
+        if(params) {
+            setData(DishesData.filter(dish => dish.category === params.id))
         }
         
-    }, [navigate, query, mainData, lang]);
+    }, [navigate, params, mainData, lang]);
 
     return (
         <>
@@ -65,7 +58,7 @@ const Dishes = () => {
                         />: 
                         mainData.temp === "3"?<TempThreeProdTwo  
                             key={dish.key} 
-                            categ={dish} 
+                            categ={{...dish, title: lang === "ar"?dish.titleAr: dish.titleEn}} 
                         />:
                         mainData.temp === "4"?<Product1 
                             key={dish.key} 

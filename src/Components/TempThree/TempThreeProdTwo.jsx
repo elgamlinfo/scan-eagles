@@ -20,7 +20,7 @@ const TempThreeProdTwo = (props) => {
     return (
         <Link to={'*'} onClick={(e) => clickHandler(e)}>
             <div className='three__prod__two'>
-                {categ.price?<span className='price'>{categ.price} {mainData.currency}</span>:null}
+                {categ.price?<span className='price_dish'>{categ.price} {mainData.currency}</span>:null}
                 <img src={categ.image} alt="" />
                 <div className='title'>
                     <p>{categ.title}</p>
