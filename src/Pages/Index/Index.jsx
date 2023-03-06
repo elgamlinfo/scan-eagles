@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import './index.scss'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import ContactBtn from '../../Components/ContactBtn/ContactBtn';
 window.scrollTo(0, 0)
 
 
@@ -26,6 +27,7 @@ const Index = () => {
                     limit={3}
                 />
                 <Outlet />
+                <ContactBtn />
             </div>
     )
 }
