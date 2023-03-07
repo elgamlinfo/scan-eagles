@@ -15,6 +15,7 @@ import TempThreeProdOneS from "../../Components/Skelaton/TempThree/TempThreeProd
 import ProdFourOne from "../../Components/Skelaton/TempFour/ProdFourOne";
 import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
 import DishesData from "../../Data/DishesData";
+import ContactBtn from "../../Components/ContactBtn/ContactBtn";
 function useQuery() {
     const { search } = useLocation();
     return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -78,6 +79,7 @@ const Dishes = () => {
                 
             </div>
             <Footer />
+            <ContactBtn />
         </>
     );
 };

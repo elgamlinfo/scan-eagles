@@ -13,7 +13,8 @@ const Splash = () => {
         navigate('/qr-menu')
     }
     function en () {
-        Cookies.set("lang", "en");
+        Cookies.set("lang", "ar");
+        document.body.style.direction = "rtl"
         navigate('/qr-menu')
     }
     return (
@@ -22,8 +23,8 @@ const Splash = () => {
                 <img src={Logo} alt=""/>
                 <p>Get It... Scan It... Smile</p>
                 <div className="splash__btn">
-                    <button onClick={() => en()}>english</button>
-                    <button onClick={() => ar()}>العربية</button>
+                    <button onClick={() => en()}>Get Started </button>
+                    {/* <button onClick={() => ar()}>العربية</button> */}
                 </div>
             </div>
         </div>

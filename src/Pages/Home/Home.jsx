@@ -22,6 +22,7 @@ import ProdFourTwo from "../../Components/Skelaton/TempFour/ProdFourTwo";
 import TitleSek from "../../Components/Skelaton/TitleSek";
 import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
 import Category from "../../Data/Category";
+import ContactBtn from "../../Components/ContactBtn/ContactBtn";
 const Home = () => {
     let lang = Cookies.get("lang")
     let [active, setActive] = useState(false);
@@ -154,6 +155,7 @@ const Home = () => {
                 feedActiveHandler={feedActiveHandler}
             />
             <Footer />
+            <ContactBtn />
         </>
     );
 };

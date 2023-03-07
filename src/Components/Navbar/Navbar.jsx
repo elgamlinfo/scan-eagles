@@ -20,7 +20,7 @@ const Navbar = (props) => {
     return (
         <div className='home__navbar'>
             <div className='toogle__menu__btn' dir='auto'>
-            {props.logo? <button className='toogle__btn' onClick={() => props.activeHandler()} aria-label="bars"> <svg
+            {props.logo? <button className='toogle__btn' onClick={() => navigate('/cart')} aria-label="bars"> <svg
                             width="25"
                             height="25"
                             viewBox="0 0 32 32"
@@ -40,10 +40,10 @@ const Navbar = (props) => {
             <img src={Img} alt=""/>
             </div>
             {!props.nolang?<div className='lang__btn'>
-                <button onClick={() => setActive(!active)} aria-label="lang" className='tog'><img src={lang} alt="" /></button>
+                {/* <button onClick={() => setActive(!active)} aria-label="lang" className='tog'><img src={lang} alt="" /></button>
                 <div className={`dropdown__lang ${active?"active":''} ${langg ==="ar"?'rtl':''}`} dir='auto' >
                     {mainData?mainData.systemlang.map((lang) => <button className='langg' onClick={() => (Cookies.set("lang", lang), window.location.reload())} key={lang}>{lang}</button>):null}
-                </div>
+                </div> */}
             </div>:<></>}
         </div>
     )

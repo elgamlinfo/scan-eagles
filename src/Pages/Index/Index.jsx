@@ -27,7 +27,6 @@ const Index = () => {
                     limit={3}
                 />
                 <Outlet />
-                <ContactBtn />
             </div>
     )
 }
