@@ -15,6 +15,7 @@ const ProductDetails = (props) => {
     const [add, setAdd] = useState(props.edit?props.dish.additions:[]);
     const navigate  = useNavigate();
     const [moreDatils, setMoreDetails] = useState(props.edit?props.dish.more_details:'');
+    
     const dish  = {
         ...props.dish,
         quantity: count,

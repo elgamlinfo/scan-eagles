@@ -16,6 +16,7 @@ import ProdFourOne from "../../Components/Skelaton/TempFour/ProdFourOne";
 import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
 import DishesData from "../../Data/DishesData";
 import ContactBtn from "../../Components/ContactBtn/ContactBtn";
+import NewDishes from "../../Components/NewDishes/NewDishes";
 function useQuery() {
     const { search } = useLocation();
     return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -57,7 +58,7 @@ const Dishes = () => {
                             categ={dish} 
                             title={title}
                         />: 
-                        mainData.temp === "3"?<TempThreeProdTwo  
+                        mainData.temp === "3"?<NewDishes  
                             key={dish.key} 
                             categ={{...dish, title: lang === "ar"?dish.titleAr: dish.titleEn}} 
                         />:

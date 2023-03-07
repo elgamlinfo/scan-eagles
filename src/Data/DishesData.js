@@ -2,45 +2,51 @@ const DishesData = [
     {
         key: 1,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "الفورنو سوبريم",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "meat-pizza"
+        price: 80,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },{
         key: 2,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "بابريكا اللحوم الحارة",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "meat-pizza"
+        price: 88,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },{
         key: 3,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "بيبرونى",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "meat-pizza"
+        price: 90,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },{
         key: 4,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "هوت دوج",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "seafood-pizza"
+        price: 100,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },{
         key: 5,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "بسطرمة",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "seafood-pizza"
+        price: 70,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },{
         key: 6,
         titleEn: "dish 1",
-        titleAr: "الطبق الاول",
+        titleAr: "سجق",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pexels-dana-tentis-1213710.jpg?alt=media&token=a2686167-4753-43f7-a5a0-18d66b31a84b",
-        price: 30,
-        category: "seafood-pizza"
+        price: 120,
+        category: "meat-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },
 ]
 

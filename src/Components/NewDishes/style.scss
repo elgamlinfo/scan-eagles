@@ -1,0 +1,35 @@
+.new_dishes {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    box-shadow:0 0 8px #0000005c;
+    height: 180px;
+    >img {
+        width: 40%;
+        height:  180px;
+        object-fit: fill;
+        border-radius: 0px 20px 20px 0 ;
+    }
+    .new_dishes_details {
+        width: 75%;
+        padding: 10px;
+        p {
+            &:first-of-type {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        button { 
+            width: 80px;
+            height: 35px;
+            margin-top: 5px;
+            border: none;
+            background-color: #3aaa35;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    }
+}
