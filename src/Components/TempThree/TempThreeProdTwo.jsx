@@ -9,12 +9,12 @@ const TempThreeProdTwo = (props) => {
     function clickHandler (e) {
         e.preventDefault()
         if(categ.has_sub_categories) {
-            navigate(`/category/${categ.title.split(' ').join('').toLowerCase()}?key=${categ.key}`)
+            navigate(`/category/${categ.titleEn.split(' ').join('').toLowerCase()}`)
         }else if(categ.price) {
-            navigate(`/dish/${categ.title.split(' ').join('').toLowerCase()}?key=${categ.key}`)
+            navigate(`/dish/${categ.titleEn .split(' ').join('').toLowerCase()}`)
         }
         else {
-            navigate(`/dishes/${categ.title.split(' ').join('').toLowerCase()}?key=${categ.key}`)
+            navigate(`/dishes/${categ.titleEn.split(' ').join('').toLowerCase()}`)
         }
     }
     return (
