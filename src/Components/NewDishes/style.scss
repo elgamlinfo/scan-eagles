@@ -33,5 +33,20 @@
             border-radius: 5px;
             font-size: 18px;
         }
+        form  {
+            label {
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 5px;
+                font-weight: 600;
+                input {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+        }
     }
 }

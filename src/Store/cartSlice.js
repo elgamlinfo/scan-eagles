@@ -19,17 +19,7 @@ export const getCart = createAsyncThunk(
 const cartSlice = createSlice({
     name: "cart",
     initialState,
-    extraReducers: {
-        [getCart.pending]: (state) => {
-            state.cartLoading = true
-        },
-        [getCart.fulfilled]: (state, {payload}) => {
-            if(payload){
-                state.cart=payload
-                state.cartLoading = false
-            }
-        }
-    },
+   
     reducers: {
         addToCart (state, action) {
             let newItem = action.payload
@@ -37,8 +27,8 @@ const cartSlice = createSlice({
             if(!isExist) {
                 let data = newItem
                 state.cart.dishes.push(data)
-                state.cart.totalPrice = state.cart.totalPrice + newItem.total_price
-                state.cart.qnt = state.cart.qnt+1;
+                // state.cart.totalPrice = state.cart.totalPrice + newItem.total_price
+                // state.cart.qnt = state.cart.qnt+1;
             }else {
                 state.cart.totalPrice = state.cart.totalPrice + newItem.total_price
                 isExist.quantity = isExist.quantity+newItem.quantity;
