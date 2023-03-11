@@ -6,6 +6,7 @@ import CartEmpty from '../../Components/Cart/CartEmpty'
 import Navbar from '../../Components/Navbar/Navbar'
 import './cart.scss'
 import { useSelector } from "react-redux";
+import ContactBtn from '../../Components/ContactBtn/ContactBtn'
 
 const Cart = () => {
     // const navigate = useNavigate();
@@ -18,6 +19,8 @@ const Cart = () => {
                 {cart.dishes&&mainData?cart.dishes.map(dish =>  <CartProduct currency={mainData.currency} key={dish.key*Math.random(0,500)} dish={dish}/>):null}
             </div>
             <CartForm /></>:<CartEmpty />}
+            <ContactBtn />
+            
         </>
     )
 }

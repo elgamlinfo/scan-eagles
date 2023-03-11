@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-          <ToastContainer 
+          {/* <ToastContainer 
           position="top-center"
           autoClose={1000}
           hideProgressBar={false}
@@ -21,7 +21,7 @@ ReactDOM.render(
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="light"/>
+          theme="light"/> */}
           <App />
       </BrowserRouter>
     </Provider>

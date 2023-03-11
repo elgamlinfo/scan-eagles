@@ -38,7 +38,7 @@ const CartProduct = (props) => {
                 <img src={props.dish.image} alt="" />
             </div>
             <div className={`prod__info ${lang === "ar"?"rtl":''}`}>
-                <div className={`prod__title ${lang === "ar"?"rtl":''}`} >{props.dish.title}</div>
+                <div className={`prod__title ${lang === "ar"?"rtl":''}`} >{props.dish.title} ({props.dish.price.type})</div>
                 <p className="prod__price">
                     {ConvertToArabicNumbers(props.dish.total_price)} {props.currency}
                 </p>
