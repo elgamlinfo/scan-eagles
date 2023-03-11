@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom'
 import './index.scss'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import ContactBtn from '../../Components/ContactBtn/ContactBtn';
 window.scrollTo(0, 0)
 
 
@@ -15,7 +14,7 @@ const Index = () => {
             <div className='index'>
                 <ToastContainer
                     position="top-center"
-                    autoClose={3000}
+                    autoClose={1000}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
@@ -23,7 +22,7 @@ const Index = () => {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="colored"
+                    theme="light"
                     limit={3}
                 />
                 <Outlet />

@@ -47,6 +47,86 @@ const DishesData = [
         price: [{price: 60, type: "صغير"},{price: 95, type: "وسط"},{price: 115, type: "كبير"}],
         category: "meat-pizza",
         details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 7,
+        titleEn: "dish 1",
+        titleAr: "فواكه البحر",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1097993868-612x612.jpg?alt=media&token=a934e355-71a2-41a1-9979-ce7848480690",
+        price: [{price: 75, type: "صغير"},{price: 105, type: "وسط"},{price: 130, type: "كبير"}],
+        category: "seafood-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 8,
+        titleEn: "dish 1",
+        titleAr: "جمبرى",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-155388738-612x612.jpg?alt=media&token=a3b085d9-6870-4f71-832e-dff74de0a835",
+        price: [{price: 70, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "seafood-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 9,
+        titleEn: "dish 1",
+        titleAr: "تونه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1366624442-612x612.jpg?alt=media&token=b80b991e-b4bb-4f36-9e0f-7e84aa67c253",
+        price: [{price: 60, type: "صغير"},{price: 95, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "seafood-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 10,
+        titleEn: "dish 1",
+        titleAr: "انشوجه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1213497118-612x612.jpg?alt=media&token=90172257-0cb3-4b44-a08c-30c4d6022753",
+        price: [{price: 60, type: "صغير"},{price: 95, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "seafood-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 11,
+        titleEn: "dish 1",
+        titleAr: "فواكه البحر سي رانش",
+        image: "  https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1308029368-612x612.jpg?alt=media&token=60eabd5c-861f-4e5a-8670-57bb9560014d",
+        price: [{price: 75, type: "صغير"},{price: 110, type: "وسط"},{price: 140, type: "كبير"}],
+        category: "seafood-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },,{
+        key: 12,
+        titleEn: "dish 1",
+        titleAr: "تشكن كرسبي",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1221262925-612x612.jpg?alt=media&token=edf7f76e-dd07-497a-a113-ddac1bb0c4ad",
+        price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "chicken-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 13,
+        titleEn: "dish 1",
+        titleAr: "ميلانو",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-155388738-612x612.jpg?alt=media&token=a3b085d9-6870-4f71-832e-dff74de0a835",
+        price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "chicken-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 14,
+        titleEn: "dish 1",
+        titleAr: "باربكيو",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-530840065-612x612.jpg?alt=media&token=8ec98470-97c1-4fd5-997e-0fe00ae3634b",
+        price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "chicken-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 15,
+        titleEn: "dish 1",
+        titleAr: "سوبر تشكن رانش",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-530840065-612x612.jpg?alt=media&token=8ec98470-97c1-4fd5-997e-0fe00ae3634b",
+        price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "chicken-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+    },{
+        key: 16,
+        titleEn: "dish 1",
+        titleAr: "دجاج رانش",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-180817243-612x612.jpg?alt=media&token=35730f64-64f0-4aec-85d4-ef70523f30ac",
+        price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "chicken-pizza",
+        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
     },
 ]
 

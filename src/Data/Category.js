@@ -9,7 +9,7 @@ const Category = [
     {
         key: 2, 
         has_sub_categories: false, 
-        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-155388738-612x612.jpg?alt=media&token=35495f2e-aeec-4e7b-ae81-fe4249fd669b", 
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1097993868-612x612.jpg?alt=media&token=a934e355-71a2-41a1-9979-ce7848480690", 
         titleEn: "seafood-pizza", 
         titleAr: "بيتزا سي فود", 
     },{
