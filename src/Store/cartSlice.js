@@ -19,21 +19,31 @@ export const getCart = createAsyncThunk(
 const cartSlice = createSlice({
     name: "cart",
     initialState,
-   
+    extraReducers: {
+        [getCart.pending]: (state) => {
+            state.cartLoading = true
+        },
+        [getCart.fulfilled]: (state, {payload}) => {
+            if(payload){
+                state.cart=payload
+                state.cartLoading = false
+            }
+        }
+    },
     reducers: {
         addToCart (state, action) {
             let newItem = action.payload
-            let isExist = state.cart.dishes.find(product => product.key === newItem.key&&JSON.stringify([product.additions]) === JSON.stringify([newItem.additions]) && product.more_details === newItem.more_details)
+            let isExist = state.cart.dishes.find(product => product.key === newItem.key && product.price.type === newItem.price.type)
             if(!isExist) {
                 let data = newItem
-                state.cart.dishes.push(data)
-                // state.cart.totalPrice = state.cart.totalPrice + newItem.total_price
-                // state.cart.qnt = state.cart.qnt+1;
+                state.cart.dishes.push({...data, total_price: data.price.price, quantity: 1})
+                state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
+                state.cart.qnt = state.cart.qnt+1;
             }else {
-                state.cart.totalPrice = state.cart.totalPrice + newItem.total_price
-                isExist.quantity = isExist.quantity+newItem.quantity;
-                isExist.additions = newItem.additions;
-                isExist.total_price = isExist.total_price+newItem.total_price
+                state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
+                isExist.quantity = isExist.quantity+1;
+                isExist.total_price = isExist.total_price+newItem.price.price
+                state.cart.qnt = state.cart.qnt+1;
             }
             localStorage.setItem('cart', JSON.stringify(state.cart))
         },
@@ -47,16 +57,25 @@ const cartSlice = createSlice({
         },
         removeOneItem (state, action) {
             let newItem = action.payload
-            let isExist = state.cart.dishes.find(product => product.key === newItem.key)
+            let isExist = state.cart.dishes.find(product => product.key === newItem.key && product.price.type === newItem.price.type)
+            
             if(isExist.quantity === 1){
-                state.cart.dishes = state.cart.dishes.filter(prod => prod.key !== newItem.key)
+                state.cart.dishes = state.cart.dishes.filter(prod => {
+                    if(prod.key === newItem.key) {
+                        if (prod.price.type !== newItem.price.type) { 
+                            return prod;
+                        }
+                    }else {
+                        return prod;
+                    }
+                })
                 state.cart.qnt = state.cart.qnt-1;
 
             }else{
                 isExist.quantity--;
-                isExist.total_price -= newItem.price
+                isExist.total_price -= newItem.price.price
             }
-            state.cart.totalPrice = state.cart.totalPrice-newItem.price
+            state.cart.totalPrice = state.cart.totalPrice-newItem.price.price
         },
         editItem(state, action) {
             let newItem = action.payload.new
@@ -71,14 +90,16 @@ const cartSlice = createSlice({
         },
         removeItem (state, action) {
             let newItem = action.payload
-            let isExist = state.cart.dishes.find(product => product.key === newItem.key&&JSON.stringify([product.additions]) === JSON.stringify([newItem.additions]))
+            let isExist = state.cart.dishes
             state.cart.totalPrice = state.cart.totalPrice-isExist.total_price
-            state.cart.qnt = state.cart.qnt-1;
+            state.cart.qnt = state.cart.qnt-isExist.quantity;
             //eslint-disable-next-line
             state.cart.dishes = state.cart.dishes.filter(prod => {
-                if(prod.key === newItem.key && JSON.stringify([prod.additions]) !== JSON.stringify([newItem.additions])) {
-                    return prod;
-                }else if(prod.key !== newItem.key) {
+                if(prod.key === newItem.key) {
+                    if (prod.price.type !== newItem.price.type) { 
+                        return prod;
+                    }
+                }else {
                     return prod;
                 }
             })
