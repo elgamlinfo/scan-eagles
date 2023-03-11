@@ -94,23 +94,23 @@ const DishesData = [
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1221262925-612x612.jpg?alt=media&token=edf7f76e-dd07-497a-a113-ddac1bb0c4ad",
         price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
         category: "chicken-pizza",
-        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+        details: "دجاج كرسبي-صلصه طماطم-فلفل اخضر-موتزاريلا-زيتون اسود"
     },{
         key: 13,
         titleEn: "dish 1",
         titleAr: "ميلانو",
-        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-155388738-612x612.jpg?alt=media&token=a3b085d9-6870-4f71-832e-dff74de0a835",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1447477143-612x612.jpg?alt=media&token=3900639f-b713-4302-97a8-42129c817233",
         price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
         category: "chicken-pizza",
-        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+        details: "دجاج فاهيتا-طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },{
         key: 14,
         titleEn: "dish 1",
         titleAr: "باربكيو",
-        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-530840065-612x612.jpg?alt=media&token=8ec98470-97c1-4fd5-997e-0fe00ae3634b",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-489809469-612x612.jpg?alt=media&token=2023711a-74bf-4003-865b-c584eda59f68",
         price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
         category: "chicken-pizza",
-        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+        details: "صوص باربيكيو-فلفل اخضر-بصل-فراخ-موتزاريلا"
     },{
         key: 15,
         titleEn: "dish 1",
@@ -118,7 +118,7 @@ const DishesData = [
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-530840065-612x612.jpg?alt=media&token=8ec98470-97c1-4fd5-997e-0fe00ae3634b",
         price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
         category: "chicken-pizza",
-        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+        details: "صلصه طماطم-موتزاريلا-فراخ-فلفل-صوص رانش"
     },{
         key: 16,
         titleEn: "dish 1",
@@ -126,7 +126,191 @@ const DishesData = [
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-180817243-612x612.jpg?alt=media&token=35730f64-64f0-4aec-85d4-ef70523f30ac",
         price: [{price: 65, type: "صغير"},{price: 100, type: "وسط"},{price: 120, type: "كبير"}],
         category: "chicken-pizza",
-        details: "دجاج, لحم, تركى مدخن, بيكن, زيتون , فلفل , صوص السوبريم"
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 17,
+        titleEn: "dish 1",
+        titleAr: "بيف مدخن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-537405083-612x612.jpg?alt=media&token=d9d6aba7-141a-48b2-b62d-b255261ed08e",
+        price: [{price: 65, type: "صغير"},{price: 105, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "roquefort-lovers-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 18,
+        titleEn: "dish 1",
+        titleAr: "رومى مدخن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-658661254-612x612.jpg?alt=media&token=6fcde015-276d-4330-bd6a-e3bd9af2b33c",
+        price: [{price: 65, type: "صغير"},{price: 105, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "roquefort-lovers-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 19,
+        titleEn: "dish 1",
+        titleAr: "عشاق الريكفورد",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1458738217-612x612.jpg?alt=media&token=67486a9d-a5c5-4b35-9f42-dcc19072cd6a",
+        price: [{price: 70, type: "صغير"},{price: 105, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "roquefort-lovers-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 20,
+        titleEn: "dish 1",
+        titleAr: "عشاق الجبنه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1427212489-612x612.jpg?alt=media&token=bb7a3986-61f3-4709-bc55-0b6a9896833f",
+        price: [{price: 60, type: "صغير"},{price: 100, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "special-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 21,
+        titleEn: "dish 1",
+        titleAr: "خضراوات",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1048400936-612x612.jpg?alt=media&token=4bf8f5a1-4cde-4553-9467-7d83490cbab7",
+        price: [{price: 60, type: "صغير"},{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "special-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 22,
+        titleEn: "dish 1",
+        titleAr: "مارجريتا",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-157507884-612x612.jpg?alt=media&token=4a3a3c5a-6de1-45ad-b951-26c84dc8b448",
+        price: [{price: 50, type: "صغير"},{price: 90, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "special-pizza",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 23,
+        titleEn: "dish 1",
+        titleAr: "كريب خضار",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/inbound8436363738199734793.jpg?alt=media&token=61df7370-3bc4-4699-952a-b8f407c902b4",
+        price: 40,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 24,
+        titleEn: "dish 1",
+        titleAr: "كريب سوبر كرسبي",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/for-web-1-15.jpg?alt=media&token=d33139e2-3042-4f6c-99b4-d3d0696731ba",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 25,
+        titleEn: "dish 1",
+        titleAr: "كريب فاهيتا",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/Meat_Fajita_Crepe_637486816058436656.jpg?alt=media&token=7ca3269b-8389-488b-b12c-da795c53604a",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 26,
+        titleEn: "dish 1",
+        titleAr: "كريب كرانشي",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/99.jpg?alt=media&token=9feea012-0624-4a1c-ac23-cde075ec5358",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 27,
+        titleEn: "dish 1",
+        titleAr: "كريب شيش",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/a482a4ef-6e63-4840-88e0-bff5e3c8c5eb.jpg?alt=media&token=7730ab00-8158-416a-ae75-ad6ce746b0ac",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 28,
+        titleEn: "dish 1",
+        titleAr: "كريب كرسبي",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault.webp?alt=media&token=995eb2b7-0a72-40f4-8488-1f0d57ab0aa1",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 29,
+        titleEn: "dish 1",
+        titleAr: "كريب بانيه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault.webp?alt=media&token=995eb2b7-0a72-40f4-8488-1f0d57ab0aa1",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 30,
+        titleEn: "dish 1",
+        titleAr: "كريب استريبس",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download%20(1).jfif?alt=media&token=1f114ff5-37aa-483b-aa63-36b0d9b7c861",
+        price: 50,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 31,
+        titleEn: "dish 1",
+        titleAr: "كريب بطاطس",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/19529104401600177662.jpg?alt=media&token=d7c9b2be-19ce-4a07-be42-33522687376a",
+        price: 35,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 32,
+        titleEn: "dish 1",
+        titleAr: "كريب سوسيس",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/43971551-v2_xlarge.jpg?alt=media&token=5aaf3676-3bf4-441a-8c29-d01518095e65",
+        price: 45,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 33,
+        titleEn: "dish 1",
+        titleAr: "كريب ميكس جبن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/2022-638014006105093137-509.jpg?alt=media&token=e499949e-9fd4-49ec-8691-16f51d550128",
+        price: 45,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 34,
+        titleEn: "dish 1",
+        titleAr: "كريب سجق",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/Sausage-Crepe-550x550.jpg?alt=media&token=498a603a-a293-4699-938e-10ba1c4ebd3e",
+        price: 45,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 35,
+        titleEn: "dish 1",
+        titleAr: "كريب برجر",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/d0213ee1-7bd5-46cf-8efc-c7e5c39d3506.jpg?alt=media&token=de684cae-7c26-4bdd-89f0-58d96572f360",
+        price: 55,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 36,
+        titleEn: "dish 1",
+        titleAr: "كريب ميكس لحوم",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/5e579265-46aa-4233-ac32-f84b9cd529d2.jpg?alt=media&token=a37d3145-5df4-4cf7-b6e0-d28615cee372",
+        price: 55,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 37,
+        titleEn: "dish 1",
+        titleAr: "كريب ميكس دجاج",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/mix_el_saada_crepe_637501443557252823.webp?alt=media&token=7808ab75-4059-4f14-ba24-a13cae325645",
+        price: 55,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 38,
+        titleEn: "dish 1",
+        titleAr: "كريب شيكولاته",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/75db62f6d59024f5144271679e333cfcd9134c85.jpg?alt=media&token=e0213fbc-4e2b-441c-98bf-86e995891144",
+        price: 45,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 39,
+        titleEn: "dish 1",
+        titleAr: "كريب شيكولاته وموز",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D8%A8-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%B2-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9.jpg?alt=media&token=a83fc4f1-6adf-4d11-8ffe-5f217685e968",
+        price: 45,
+        category: "crepe",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },
 ]
 

@@ -29,12 +29,12 @@ const NewDishes = ({categ}) => {
         <div className='new_dishes_details'>
             <h3>{title}</h3>
             <p>{details}</p>
-            <form>
+            {Array.isArray(price)?<form>
                 {price.map((p,i) =>  <label key={i}>
                     <input type='radio' name='price' value={p.price} onChange={(e) => setSelected({...categ, price: categ.price.filter(p => e.target.value == p.price)[0]})}/>
-                    {`${p.type} (${ConvertToArabicNumbers(p.price)}) جنيه`}
+                    {`${p.type} (${ConvertToArabicNumbers(price)}) جنيه`}
                 </label>)}
-            </form>
+            </form>:<div>{`${ConvertToArabicNumbers(price)} جنيه`}</div>}
             <button onClick={() => handleClick()}>أضافة</button>
         </div>
     </div>
