@@ -448,7 +448,7 @@ const DishesData = [
         category: "side-dishes",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },{
-        key: 56,
+        key: 57,
         titleEn: "dish 1",
         titleAr: "كاليزونى البيبرونى",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-472068575-612x612.jpg?alt=media&token=5e473716-df55-46b5-9013-ba9ece7bc897",
@@ -456,7 +456,7 @@ const DishesData = [
         category: "side-dishes",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },{
-        key: 56,
+        key: 58,
         titleEn: "dish 1",
         titleAr: "كاليزونى دجاج",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1190420565-612x612.jpg?alt=media&token=441d5240-7f40-4fba-8915-e4b8e551299f",
@@ -464,7 +464,7 @@ const DishesData = [
         category: "side-dishes",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },{
-        key: 56,
+        key: 59,
         titleEn: "dish 1",
         titleAr: "ستيكس بيبرونى",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/35554520-4f30-4986-8ed7-c73aefed26b0.jpg?alt=media&token=7fa32b75-379e-420a-8765-f261e2d099c8",
@@ -472,7 +472,7 @@ const DishesData = [
         category: "side-dishes",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },{
-        key: 56,
+        key: 60,
         titleEn: "dish 1",
         titleAr: "ستيكس عادى",
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pizza_sticks_2.jpg?alt=media&token=0fab4818-9b3b-450f-a316-f1162ef16dc2",
