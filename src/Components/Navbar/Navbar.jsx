@@ -13,6 +13,7 @@ import Img from '../../images/logo.png'
 const Navbar = (props) => {
     const langg = Cookies.get('lang')
     const mainData = useSelector(state => state.mainData.data)
+    const cart = useSelector(state => state.cart.cart)
     const [active, setActive] = useState(false)
     const navigate = useNavigate();
 
@@ -40,7 +41,9 @@ const Navbar = (props) => {
                                 d="M7.30469 4L4.66406 11.043H6.80469L8.69531 6H23.3086L25.1992 11.043H27.332L24.6914 4H7.30469ZM2 12V18H3.25781L6.25781 28H25.7461L28.7461 18H30V12H2ZM4 14H28V16H27.2539L24.2539 26H7.74219L4.74219 16H4V14ZM11 17V24H13V17H11ZM15 17V24H17V17H15ZM19 17V24H21V17H19Z"
                                 fill="white"
                             />
-                        </svg></button>
+                        </svg>
+                            <span>{cart.qnt}</span>
+                        </button>
             </div>:<></>}
         </div>
     )
