@@ -10,11 +10,16 @@ const NewDishes = ({categ}) => {
     const dispatch = useDispatch()
     
     const handleClick = () => {
-        if (selected) { 
-            dispatch(cartActions.addToCart(selected));
-            toast.success('Order Added Successfully')
+        if(Array.isArray(price)) {
+            if (selected) { 
+                dispatch(cartActions.addToCart(selected));
+                toast.success('Order Added Successfully')
+            }else {
+                toast.error('Please Select Price')
+            }
         }else {
-            toast.error('Please Select Price')
+            dispatch(cartActions.addToCart(categ));
+            toast.success('Order Added Successfully')
         }
     } 
     

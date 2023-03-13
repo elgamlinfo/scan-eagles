@@ -111,25 +111,12 @@ const Popup = (props) => {
                     </svg>
                 </div>
                 <p className="mess__info">
-                    {props.title}
+                    {"😊 BonAppetit"}
                 </p>
                 {/*eslint-disable-next-line*/}
-                <button className="close__btn" onClick={() =>  (props.setActiveMessage(false), props.popCheckClick?props.popCheckClick():navigate('/cart'))}>close</button>
+                <button className="close__btn" onClick={() =>  (props.setActive(false))}>close</button>
                 {/*eslint-disable-next-line*/}
-                <button className="close__icon" onClick={() => (props.setActiveMessage(false), props.popCheckClick?props.popCheckClick():navigate('/cart'))}>
-                    <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M2.21875 0.78125L0.78125 2.21875L9.5625 11L0.78125 19.7812L2.21875 21.2188L11 12.4375L19.7812 21.2188L21.2188 19.7812L12.4375 11L21.2188 2.21875L19.7812 0.78125L11 9.5625L2.21875 0.78125Z"
-                            fill="black"
-                        />
-                    </svg>
-                </button>
+                
             </div>
         </div>
     );

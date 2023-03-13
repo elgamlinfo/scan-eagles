@@ -34,16 +34,30 @@ const cartSlice = createSlice({
         addToCart (state, action) {
             let newItem = action.payload
             let isExist = state.cart.dishes.find(product => product.key === newItem.key && product.price.type === newItem.price.type)
-            if(!isExist) {
-                let data = newItem
-                state.cart.dishes.push({...data, total_price: data.price.price, quantity: 1})
-                state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
-                state.cart.qnt = state.cart.qnt+1;
+            if(newItem.price.type) {
+                if(!isExist) {
+                    let data = newItem
+                    state.cart.dishes.push({...data, total_price: data.price.price, quantity: 1})
+                    state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
+                    state.cart.qnt = state.cart.qnt+1;
+                }else {
+                    state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
+                    isExist.quantity = isExist.quantity+1;
+                    isExist.total_price = isExist.total_price+newItem.price.price
+                    state.cart.qnt = state.cart.qnt+1;
+                }
             }else {
-                state.cart.totalPrice = state.cart.totalPrice + newItem.price.price
-                isExist.quantity = isExist.quantity+1;
-                isExist.total_price = isExist.total_price+newItem.price.price
-                state.cart.qnt = state.cart.qnt+1;
+                if(!isExist) {
+                    let data = newItem
+                    state.cart.dishes.push({...data, total_price: data.price, quantity: 1})
+                    state.cart.totalPrice = state.cart.totalPrice + newItem.price
+                    state.cart.qnt = state.cart.qnt+1;
+                }else {
+                    state.cart.totalPrice = state.cart.totalPrice + newItem.price
+                    isExist.quantity = isExist.quantity+1;
+                    isExist.total_price = isExist.total_price+newItem.price
+                    state.cart.qnt = state.cart.qnt+1;
+                }
             }
             localStorage.setItem('cart', JSON.stringify(state.cart))
         },
@@ -57,25 +71,36 @@ const cartSlice = createSlice({
         },
         removeOneItem (state, action) {
             let newItem = action.payload
-            let isExist = state.cart.dishes.find(product => product.key === newItem.key && product.price.type === newItem.price.type)
-            
-            if(isExist.quantity === 1){
-                state.cart.dishes = state.cart.dishes.filter(prod => {
-                    if(prod.key === newItem.key) {
-                        if (prod.price.type !== newItem.price.type) { 
+            if(newItem.price.type) {
+                let isExist = state.cart.dishes.find(product => product.key === newItem.key && product.price.type === newItem.price.type)
+                if(isExist.quantity === 1){
+                    state.cart.dishes = state.cart.dishes.filter(prod => {
+                        if(prod.key === newItem.key) {
+                            if (prod.price.type !== newItem.price.type) { 
+                                return prod;
+                            }
+                        }else {
                             return prod;
                         }
-                    }else {
-                        return prod;
-                    }
-                })
-                state.cart.qnt = state.cart.qnt-1;
+                    })
+                    state.cart.qnt = state.cart.qnt-1;
 
-            }else{
-                isExist.quantity--;
-                isExist.total_price -= newItem.price.price
+                }else{
+                    isExist.quantity--;
+                    isExist.total_price -= newItem.price.price
+                }
+            }else { 
+                let isExist = state.cart.dishes.find(product => product.key === newItem.key)
+                if(isExist.quantity === 1){
+                    state.cart.dishes = state.cart.dishes.filter(prod => prod.key !== newItem.key)
+                    state.cart.qnt = state.cart.qnt-1;
+
+                }else{
+                    isExist.quantity--;
+                    isExist.total_price -= newItem.price
+                }
             }
-            state.cart.totalPrice = state.cart.totalPrice-newItem.price.price
+            state.cart.totalPrice = state.cart.totalPrice-newItem.price
         },
         editItem(state, action) {
             let newItem = action.payload.new
@@ -90,9 +115,9 @@ const cartSlice = createSlice({
         },
         removeItem (state, action) {
             let newItem = action.payload
-            let isExist = state.cart.dishes
-            state.cart.totalPrice = state.cart.totalPrice-isExist.total_price
-            state.cart.qnt = state.cart.qnt-isExist.quantity;
+            // let isExist = state.cart.dishes
+            state.cart.totalPrice = state.cart.totalPrice-newItem.total_price
+            state.cart.qnt = state.cart.qnt-newItem.quantity;
             //eslint-disable-next-line
             state.cart.dishes = state.cart.dishes.filter(prod => {
                 if(prod.key === newItem.key) {

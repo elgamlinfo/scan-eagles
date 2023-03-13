@@ -311,6 +311,174 @@ const DishesData = [
         price: 45,
         category: "crepe",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 40,
+        titleEn: "dish 1",
+        titleAr: "مكرونه جمبرى صوص ابيض",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1358831644-612x612.jpg?alt=media&token=ec936c5b-fb99-4da0-8de6-4a71364a7824",
+        price: 75,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 41,
+        titleEn: "dish 1",
+        titleAr: "مكرونه سي فود صوص",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-171375255-612x612.jpg?alt=media&token=7f91657d-ca93-49c8-ba21-92b63b6cb6e2",
+        price: 85,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 42,
+        titleEn: "dish 1",
+        titleAr: "مكرونه فراخ صوص ابيض",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-884287870-612x612.jpg?alt=media&token=6a5de5ca-aa5b-4a75-89c7-a1bcd9f97181",
+        price: 70,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 43,
+        titleEn: "dish 1",
+        titleAr: "مكرونه فراخ صوص احمر",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-523256382-612x612.jpg?alt=media&token=39f26066-2049-4357-908f-ec42a6bff025",
+        price: 65,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 44,
+        titleEn: "dish 1",
+        titleAr: "مكرونه هوت دوج احمر",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1313885171-612x612.jpg?alt=media&token=cd66f69d-c100-49d9-a0ef-da9585f416ea",
+        price: 60,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 45,
+        titleEn: "dish 1",
+        titleAr: "مكرونه سجق",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-461220507-612x612.jpg?alt=media&token=dfa320b8-e81b-42d3-b03f-54d14b36653f",
+        price: 60,
+        category: "pasta",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 46,
+        titleEn: "dish 1",
+        titleAr: "سكر ولبن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault.webp?alt=media&token=35532567-9aee-439d-9fa0-fbe0df72dc9d",
+        price: 75,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 47,
+        titleEn: "dish 1",
+        titleAr: "قشطه ولبن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/%D8%A7%D9%84%D9%81%D8%B7%D9%8A%D8%B1-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%88.jpg?alt=media&token=b077069e-571b-469f-af98-2a03a123d47a",
+        price: 65,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 48,
+        titleEn: "dish 1",
+        titleAr: "شيكولاته",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/e57be5da-0d13-4433-a0db-4149ad12afd3.jpg?alt=media&token=71e63610-c7d7-4c76-8343-b46e4604900f",
+        price: 70,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 49,
+        titleEn: "dish 1",
+        titleAr: "نوتيلا وموز",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault.jpg?alt=media&token=27166ef1-e075-42ee-b027-1a87f7ef0277",
+        price: 75,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 50,
+        titleEn: "dish 1",
+        titleAr: "نوتيلا ومكسرات",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/maxresdefault.jpg?alt=media&token=4c1259cf-0191-4533-88cc-a1effdce63af",
+        price: 80,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 51,
+        titleEn: "dish 1",
+        titleAr: "بسبوسه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault%20(1).jpg?alt=media&token=3c8d34e5-83ee-4a63-9f34-83df6c549be7",
+        price: 70,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 52,
+        titleEn: "dish 1",
+        titleAr: "كاسترد",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/maxresdefault%20(1).jpg?alt=media&token=036ce95b-9670-435f-adaf-60fd7b5e9157",
+        price: 80,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 53,
+        titleEn: "dish 1",
+        titleAr: "قرفه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/%D9%81%D8%B7%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%B1%D9%81%D8%A9-%D9%88%D8%A7%D9%84%D8%B3%D9%83%D8%B1.jpg?alt=media&token=923056aa-3b15-4f0a-87be-3013bcdc042e",
+        price: 65,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 54,
+        titleEn: "dish 1",
+        titleAr: "مكسرات",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/hqdefault%20(2).jpg?alt=media&token=a5a81e96-68bf-4ca3-b832-287ab6698f1e",
+        price: 80,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 55,
+        titleEn: "dish 1",
+        titleAr: "مكس شيكولاته",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download.jfif?alt=media&token=e27f8fa8-6d11-437c-a207-4486464ff958",
+        price: 70,
+        category: "sweet-pie",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 56,
+        titleEn: "dish 1",
+        titleAr: "كاليزونى اللحوم الحاره",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1434669970-612x612.jpg?alt=media&token=1f2c45e3-4790-4f96-b83f-71341f8b7156",
+        price: 45,
+        category: "side-dishes",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 56,
+        titleEn: "dish 1",
+        titleAr: "كاليزونى البيبرونى",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-472068575-612x612.jpg?alt=media&token=5e473716-df55-46b5-9013-ba9ece7bc897",
+        price: 45,
+        category: "side-dishes",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 56,
+        titleEn: "dish 1",
+        titleAr: "كاليزونى دجاج",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1190420565-612x612.jpg?alt=media&token=441d5240-7f40-4fba-8915-e4b8e551299f",
+        price: 55,
+        category: "side-dishes",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 56,
+        titleEn: "dish 1",
+        titleAr: "ستيكس بيبرونى",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/35554520-4f30-4986-8ed7-c73aefed26b0.jpg?alt=media&token=7fa32b75-379e-420a-8765-f261e2d099c8",
+        price: 45,
+        category: "side-dishes",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 56,
+        titleEn: "dish 1",
+        titleAr: "ستيكس عادى",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/pizza_sticks_2.jpg?alt=media&token=0fab4818-9b3b-450f-a316-f1162ef16dc2",
+        price: 40,
+        category: "side-dishes",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
     },
 ]
 
