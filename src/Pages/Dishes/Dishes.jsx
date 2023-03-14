@@ -17,6 +17,7 @@ import ProdTempThree from "../../Components/Skelaton/TempTwo/ProdTempThree";
 import DishesData from "../../Data/DishesData";
 import ContactBtn from "../../Components/ContactBtn/ContactBtn";
 import NewDishes from "../../Components/NewDishes/NewDishes";
+import WhatsAppBtn from "../../Components/WhatsAppBtn/WhatsAppBtn";
 function useQuery() {
     const { search } = useLocation();
     return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -81,6 +82,7 @@ const Dishes = () => {
             </div>
             <Footer />
             <ContactBtn />
+            <WhatsAppBtn />
         </>
     );
 };

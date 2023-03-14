@@ -10,7 +10,7 @@ import ContactBtn from '../../Components/ContactBtn/ContactBtn'
 import { cartActions } from '../../Store/cartSlice'
 import Popup from '../../Components/Popup/Popup'
 import { useState } from 'react'
-
+import WhatsAppBtn from '../../Components/WhatsAppBtn/WhatsAppBtn'
 const Cart = () => {
     // const navigate = useNavigate();
     const dispatch = useDispatch()
@@ -33,6 +33,7 @@ const Cart = () => {
             </div>
             </>:<CartEmpty />}
             <ContactBtn />
+            <WhatsAppBtn />
             <Popup active={active} setActive={setActive}/>
         </>
     )
