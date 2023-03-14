@@ -51,10 +51,28 @@ const Category = [
     },{
         key: 9, 
         has_sub_categories: false, 
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/Untitled.png?alt=media&token=051b929e-d283-4c0c-8ec0-77fe649ba3d6",
+        titleEn: "pies", 
+        titleAr: "فطائر شرقى", 
+    },{
+        key: 10, 
+        has_sub_categories: false, 
         image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1222770403-612x612.jpg?alt=media&token=d2e244c6-ff72-4504-b2ee-f8980be1f75d",
         titleEn: "side-dishes", 
         titleAr: "الاصناف الجانبيه", 
-    }
+    },{
+        key: 11, 
+        has_sub_categories: false, 
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1388138709-612x612.jpg?alt=media&token=4ea37128-da63-4e9f-bfde-2d0be6f130dd",
+        titleEn: "additions", 
+        titleAr: "الاضافات", 
+    },{
+        key: 12, 
+        has_sub_categories: false, 
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1349067702-612x612.jpg?alt=media&token=fe9f23f6-2053-4958-b180-e5314ca0a2a0",
+        titleEn: "salads", 
+        titleAr: "السلطات", 
+    },
 ]   
 
 

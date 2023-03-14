@@ -479,6 +479,134 @@ const DishesData = [
         price: 40,
         category: "side-dishes",
         details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 61,
+        titleEn: "dish 1",
+        titleAr: "فطيرة سجق",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download.jfif?alt=media&token=b102b245-e29b-4102-8183-a5b97e36d57d",
+        price: [{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 63,
+        titleEn: "dish 1",
+        titleAr: "فطيرة بسطرمه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download%20(1).jfif?alt=media&token=287b28a4-4e9c-4201-a5b6-12e71d3bd582",
+        price: [{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 64,
+        titleEn: "dish 1",
+        titleAr: "فطيرة سوسيس",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/520222813814701529840.jpg?alt=media&token=b7221414-bb72-42f2-9ab1-d267b1c436bf",
+        price: [{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 65,
+        titleEn: "dish 1",
+        titleAr: "فطيرة مشكل جبن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/4202229212023355245198.jpg?alt=media&token=3a3d5771-6b38-4734-852a-e46f0c252ac9",
+        price: [{price: 100, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 66,
+        titleEn: "dish 1",
+        titleAr: "فطيرة لحمه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download%20(2).jfif?alt=media&token=2e10c1e5-e1a4-4245-a2e3-925cb93f7246",
+        price: [{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 67,
+        titleEn: "dish 1",
+        titleAr: "فطيرة فراخ",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/Chicken_BBQ_Pie_637716475875349935.jpg?alt=media&token=85d974cb-64e8-4eba-9fd1-a331ab792259",
+        price: [{price: 100, type: "وسط"},{price: 115   , type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 68,
+        titleEn: "dish 1",
+        titleAr: "فطيرة تونه",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/Crumbled_Tuna_Pie.jpg?alt=media&token=2b37d72e-be4b-49d1-b722-1ab9c5914a69",
+        price: [{price: 100, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 69,
+        titleEn: "dish 1",
+        titleAr: "فطيرة مكس لحوم",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/3632908c-4a3d-442f-a50b-816c1f504244.jpg?alt=media&token=fcd1877f-aac1-4c8d-9da7-b24b89083d1f",
+        price: [{price: 105, type: "وسط"},{price: 120, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 70,
+        titleEn: "dish 1",
+        titleAr: "فطيرة خضراوات",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/maxresdefault.jpg?alt=media&token=00efc686-850d-43fa-864d-da63f196b538",
+        price: [{price: 95, type: "وسط"},{price: 110, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 71,
+        titleEn: "dish 1",
+        titleAr: "فطيرة روزبيف",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/download%20(3).jfif?alt=media&token=abccaf93-72da-4baf-a4c7-3f02723d7794",
+        price: [{price: 100, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 72,
+        titleEn: "dish 1",
+        titleAr: "فطيرة رومى مدخن",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/16afb68f-e479-49a6-9ba4-297149d8eb56.jpg?alt=media&token=655f3cd2-615d-4504-b2f7-fbc13462f278",
+        price: [{price: 100, type: "وسط"},{price: 115, type: "كبير"}],
+        category: "pies",
+        details: "فراخ-صلصه طماطم-فلفل اخضر-موتزاريلا-صوص رانش"
+    },{
+        key: 73,
+        titleEn: "dish 1",
+        titleAr: "باكيت بطاطس صغير",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1209519161-612x612.jpg?alt=media&token=3252f184-af1f-4170-b1db-4a3a7f67077f",
+        price: 15,
+        category: "additions",
+        details: ""
+    },{
+        key: 74,
+        titleEn: "dish 1",
+        titleAr: "باكيت بطاطس كبير",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1164213897-612x612.jpg?alt=media&token=9ecd709d-19e9-4ee5-80e5-c8ab5393b291",
+        category: "additions",
+        price: 20,
+        details: ""
+    },{
+        key: 75,
+        titleEn: "dish 1",
+        titleAr: "مخلل",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-1273760640-612x612.jpg?alt=media&token=6fb625c7-4913-43e5-9cb4-2e77e90891cf",
+        category: "salads",
+        price: 5,
+        details: ""
+    },{
+        key: 76,
+        titleEn: "dish 1",
+        titleAr: "سلطه كبيرة",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-691448664-612x612.jpg?alt=media&token=8c9dd6f4-c8af-4159-97c7-d3ee747b763d",
+        category: "salads",
+        price: 40,
+        details: ""
+    },{
+        key: 77,
+        titleEn: "dish 1",
+        titleAr: "سلطه نوع واحد",
+        image: "https://firebasestorage.googleapis.com/v0/b/eagles-resort.appspot.com/o/istockphoto-175197961-612x612.jpg?alt=media&token=8f44e5e5-dac5-4bc7-a95a-7197d22b03fd",
+        category: "salads",
+        price: 20,
+        details: ""
     },
 ]
 
